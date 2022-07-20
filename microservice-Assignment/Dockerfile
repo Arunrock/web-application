@@ -7,4 +7,4 @@ FROM openjdk:11
 RUN mkdir /employee
 COPY --from=builder /app/target/*.jar  /employee
 WORKDIR /employee
-CMD ["java","-jar","microservice0.0.1-SNAPSHOT.jar"]
+CMD ["java","-jar","microservice-0.0.1-SNAPSHOT.jar"]
