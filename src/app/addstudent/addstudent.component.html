@@ -1,0 +1,38 @@
+<p>addstudent works!</p>
+<div class="col-md-6">
+    <form>
+<div class="form-group">
+   <label for="studentroll_no">StudentRoll_no:</label>
+   <input 
+   type="id" 
+   name="studentroll_no"
+    placeholder="Roll_no"
+     [(ngModel)]= "student.roll_no"
+      required /></div>
+   <div class="form-group">
+   <label for="studentname">StudentName:</label>
+   <input
+
+    type="name" 
+    name="studentname"
+     placeholder="name"
+      [(ngModel)]= "student.name"
+       required /></div>
+   <div class="form-group">
+   <label for="studentdepartment">Studentdepartment:</label>
+   <input
+    type="name"
+     name="studentdepartment" 
+     placeholder="department"
+      [(ngModel)]= "student.department"
+       required /></div>
+   <div class="form-group">
+   <label for="studentgrade">Studentgrade:</label>
+   <input 
+   type ="name" 
+   name="studentgrade"
+    placeholder="grade"
+     [(ngModel)]= "student.grade" required /></div>
+   <button class="btn btn-success"(click)= "createStudent()">Create</button>
+</form>
+</div>

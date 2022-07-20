@@ -1,0 +1,30 @@
+
+<p>studentlist works!</p>
+
+<div>
+<table class = "table table-hover">
+    <thead>
+    <tr>
+<th> StudentRoll_no</th>
+<th> StudentName</th>
+<th> Studentdepartment</th>
+<th> Studentgrade</th>
+</tr>
+    </thead>
+    <tbody>
+        <tr *ngFor= "let student of students">
+<td> {{student.roll_no}}</td>
+<td>{{student.name}}</td>
+<td>{{student.department}}</td>
+<td>{{student.grade}}</td>
+<td>
+    <button class="btn btn-danger" (click)= "deleteStudent(student)"> Delete </button>
+    </td>
+    <td>
+        <button class="btn btn-warning" (click)= "updateStudent(student)"  > update </button>
+</td> </tr>
+    </tbody>
+</table>
+
+</div>
+ 
